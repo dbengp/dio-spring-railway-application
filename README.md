@@ -1,7 +1,47 @@
 # Getting Started
 
-# Simple Application with spring web and data jpa, railway for publishing. 
+# Simple Application with spring web and data jpa, railway for publishing.
 
+##Diagrama de Classes:
+```mermaid
+   classDiagram
+    class User {
+        - name: String
+        - email: String
+        - account: Account
+        - features: List<Feature>
+        - cards: List<Card>
+        - news: List<News>
+    }
+
+    class Account {
+        - number: String
+        - agency: String
+        - balance: Double
+        - limit: Double
+    }
+
+    class Feature {
+        - name: String
+        - description: String
+    }
+
+    class Card {
+        - number: String
+        - operation: String
+        - limit: Double
+    }
+
+    class News {
+        - title: String
+        - content: String
+    }
+
+    User --> Account
+    User --> Feature
+    User --> Card
+    User --> News
+```
 ### Reference Documentation
 
 For further reference, please consider the following sections:
@@ -24,6 +64,5 @@ The following guides illustrate how to use some features concretely:
 ### Additional Links
 
 These additional references should also help you:
-
 * [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
 
