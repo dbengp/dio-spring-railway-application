@@ -1,6 +1,7 @@
 package org.sample.railwayapplication.controller;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.Valid;
 import org.sample.railwayapplication.domain.model.User;
 import org.sample.railwayapplication.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,7 @@ public class UserController {
     UserService userService;
 
     @GetMapping("/{id}")
-    public ResponseEntity<User> find(@PathVariable(name = "id") Long id){
+    public ResponseEntity<User> find(@Valid @PathVariable(name = "id") Long id){
         return ResponseEntity.ok(userService.findById(id));
     }
 
@@ -29,7 +30,7 @@ public class UserController {
     }
 
     @PostMapping
-    public ResponseEntity<User> create(@RequestBody User user){
+    public ResponseEntity<User> create(@Valid @RequestBody User user){
         return ResponseEntity.created(ServletUriComponentsBuilder
                         .fromCurrentRequest()
                         .path("/{id}")
