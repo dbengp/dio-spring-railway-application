@@ -70,5 +70,5 @@ These additional references should also help you:
 ![image](https://github.com/user-attachments/assets/a1a18c5a-9611-4210-9ac1-a764fe9d0dfd)
 
 ### acesso púlbico a aplicação:
-[dio-spring-railway-application-production.up.railway.app](https://dio-spring-railway-application-production.up.railway.app/)
+* openapi-doc: <https://dio-spring-railway-application-production.up.railway.app/swagger-ui/index.html#/>
 
