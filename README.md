@@ -71,4 +71,6 @@ These additional references should also help you:
 
 ### acesso púlbico a aplicação:
 * openapi-doc: <https://dio-spring-railway-application-production.up.railway.app/swagger-ui/index.html#/>
+![image](https://github.com/user-attachments/assets/c57db412-f7f5-462c-ad2d-8c6540250bcb)
+![image](https://github.com/user-attachments/assets/97b8b69a-8803-416e-8bec-c9916852cac6)
 
